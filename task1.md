@@ -147,13 +147,13 @@ uid=29999(oem) gid=29999(oem) группы=29999(oem),4(adm),24(cdrom),27(sudo),
  
 # Механизм sudo и su
 
-● su – переключение пользователя
-● sudo su – переключение на
+- su – переключение пользователя
+- sudo su – переключение на
 суперпользователя (root)
-● sudo – выполнение команды с правами
+- sudo – выполнение команды с правами
 суперпользователя
-● /etc/sudoers – конфигурация sudo
-● visudo – редактирование
+- /etc/sudoers – конфигурация sudo
+- visudo – редактирование
 вводим команду "sudo visudo" - открывется редактор nano.
 Под строкой код определяющий работу без пароля
  `Allow members of group sudo to execute any command`
@@ -164,22 +164,23 @@ uid=29999(oem) gid=29999(oem) группы=29999(oem),4(adm),24(cdrom),27(sudo),
 
 
 # Изменение владельца и группы владельца файлов
-● chown – изменение владельца и группы
+- chown – изменение владельца и группы
 прим: `sudo chown testuser:www-data test3` где tesyuser -пользователь, www-data - группа, test3 - имя файла к кторому производится изменение
 
-○ chown -R – рекурсивно
+- chown -R – рекурсивно
 для каталога и всез вложенных каталоги а файлов
 прим: `sudo chown -R testuser:www-data /home/oem/test1`
-○ chown testuser:testgroup
-○ chown testuser
-● chgrp – изменение группы
-○ chgrp -R –рекурсивно
+- chown testuser:testgroup
+- chown testuser
+-chgrp – изменение группы
+- chgrp -R –рекурсивно
 пример:  `sudo chgrp -R adm /home/oem/test1`
-○ chgrp testgroup
+- chgrp testgroup
 
 
-#Права доступа для файлов и директорий
--rwxr-xr-- эти обозначения называются биты
+# Права доступа для файлов и директорий
+
+**-rwxr-xr--** эти обозначения называются биты
 **-rwx** владелец
 **r-x** группа, пользователь в группе
 **r--** dct остальные пользователи
