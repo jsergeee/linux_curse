@@ -117,7 +117,7 @@ m - это alt. Отсальное в подсказках
 # Управление пользователями
 
 **useradd**  создание пользователя пример создания пользователя:
-`$ sudo useradd -s /bin/bash -m -d /home/testuser testuser`
+`sudo useradd -s /bin/bash -m -d /home/testuser testuser`
 с помощью команды `cat /etc/passwd` проверяем появилcя ли пользователь видм результат:
 `testuser:x:30001:30001::/home/testuser:/bin/bash` (пользователь без пароля)
 
@@ -137,7 +137,7 @@ m - это alt. Отсальное в подсказках
 
 
 # пример создания пользователя:
-`$ sudo useradd -s /bin/bash -m -d /home/testuser testuser`
+`sudo useradd -s /bin/bash -m -d /home/testuser testuser`
 с помощью команды `at /etc/passwd` проверяем появилcя ли пользователь видми результат:
 `testuser:x:30001:30001::/home/testuser:/bin/bash` (пользователь без пароля)
 
